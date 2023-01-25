@@ -4,9 +4,8 @@ chrome.tabs.query({active: true, currentWindow: true}, tabs => {
         root.getFile("data/en.json", {}, function (fileEntry) {
             fileEntry.file(function (file) {
                 const reader = new FileReader();
-                reader.onloadend = e => {
-                    if (e) console.error(e);
-                    else data = JSON.parse(this.result);
+                reader.onloadend = () => {
+                    if (this.result) data = JSON.parse(this.result);
                 }
                 reader.readAsText(file);
             });
