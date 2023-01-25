@@ -1,0 +1,15 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.list {
+    text-align: start;
+}
+
+.row {
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 4px;
+}

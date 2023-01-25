@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Rare words",
+  "description": "Learning rare words for intermediate+ learners",
+  "version": "0.1",
+  "author": "numq.dev@gmail.com",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://*/",
+    "https://*/",
+    "file://*/"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "web_accessible_resources": [
+    "data/en.json"
+  ]
+}
